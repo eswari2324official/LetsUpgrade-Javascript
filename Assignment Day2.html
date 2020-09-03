@@ -1,0 +1,58 @@
+<html><head> 
+    <title>
+        Assignment Day 2
+    </title> 
+   </head> 
+   <body> 
+    <h1>Day 2: Assignment Questions</h1> 
+    <h5>Q1: Program to search for a particular character in a string </h5> 
+    <h5>Q2: Program to convert minutes to seconds</h5> 
+    <h5>Q3: Program to search for a element in an array of strings</h5> 
+    <h5>Q4: Program to display only elements containing a' in them from a array</h5> 
+    <h5>Q5: Print an array in reverse order</h5> 
+    <h3>Please Check console for my answers to all the questions</h3> 
+    <script>
+        // Program for Question 1
+      console.log("Answer to Q1:");
+        let word="Washington";
+       console.log("Searching for a character in "+ word);
+       console.log("Character to search is 'h'")
+       let index = word.indexOf("h");
+       console.log("The position of the character in the string is at "+index)
+       //Program for Question 2
+     console.log("Answer to Q2 :");
+     let minutes = 2;
+     console.log("No. of Minutes to convert to seconds is " +minutes);
+     console.log("No. of seconds for "+minutes+" minutes is "+ (minutes*60));
+          //Program for Question 3
+     console.log("Answer to Q3:");
+     let Capital = ['Chennai','Mumbai', 'Kolkata','Delhi','Hyderabad'];
+        let city = "Delhi";
+        console.log(Capital);
+        for (let index = 0; index < Capital.length; index++) {
+            if (Capital[index] == city ) {
+             console.log("Found Delhi at "+ Capital.indexOf(city))
+            }
+        }
+        //Program for Question 4
+        console.log("Answer to Q4:");
+        Capital.push("Kochi", "Indore", "Agra");
+        console. log(Capital);
+        for(let i=0; i<Capital.length; i++)
+        {
+        if (Capital[i].includes("a") || Capital[i].includes("A"))
+        {
+            console.log("Found Character 'a' or 'A' in " +Capital[i]);
+        }
+        }
+        //Program for Question 5
+        console.log("Answer to Q5:");
+        console.log("My Array of Strings to reverse is as follows :"+Capital);
+        console.log(Capital.length);
+        for(i=Capital.length-1;i>=0; i--)
+        {
+            console.log(Capital[i]);
+        }
+        //Thanks for the Day 2 - Assignment 
+     </script> 
+     </body></html>

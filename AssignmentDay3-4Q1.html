@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Assignment for Day 3-4</title>
+    </head>
+    <body>
+        <H1>Assignment Questions 1 for Day 3-4 </H1>
+        <H2> Question 1</H2>
+        <br/>
+        <p><h3>Create a webpage containing an image and three buttons</h3></p>
+        <ol>
+            <li>On click of the second button a change the existing image to a new image</li>
+            <li>On click of the third button change it once again</li>
+            <li>On click of first, the first image should come back</li>
+        </ol>
+        <H3>Answer : </H3>
+        <br/>
+        <img src="https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="200px" id="image"/>
+        <br/> <br/>
+        <button onclick="firButton()">First</button> 
+        <button onclick="SecButton()">Second</button>
+        <button onclick="ThirdButton()">Third</button> 
+        <script>
+            const newurl1=document.getElementById("image").getAttribute("src")
+            const newurl2="https://images.unsplash.com/photo-1501686962565-1350ab98237f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+            const newurl3="https://images.pexels.com/photos/658687/pexels-photo-658687.jpeg"
+            
+            function firButton() {
+                const img1 = document.getElementById("image");
+                img1.src=newurl1
+            }
+            function SecButton() {
+                const img2= document.getElementById("image");
+                img2.src=newurl2;
+            }
+            function ThirdButton() {
+                const img3= document.getElementById("image");
+                img3.src=newurl3;
+            }
+        </script>
+            </body>
+</html>

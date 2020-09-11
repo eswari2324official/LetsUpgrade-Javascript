@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Assignment for Day 3-4</title>
+    </head>
+    <body>
+        <H1>Assignment Questions 3 & 4 for Day 3-4 </H1>
+        <H2> Question 3</H2>
+        <p><h3>Create an array of objects with objects having the following properties</h3></p>
+        <ol>
+            <li>{name (string), age (number), country (string), hobbies array (string [ ] ) }</li>
+            <li>Write a function to display all the objects on the console</li>
+        </ol>
+        <H2> Question 4</H2>
+        <p><h3>Following the 3rd question</h3></p>
+        <ol>
+            <li>Write a function to display all the objects having age less than 30</li>
+            <li>Write a function to display all the objects having country India</li>
+        </ol>
+        <H3> Answers for Question 3 & 4 : </H3>
+        
+        <H4>Please check the console for the answers</H4>
+        <script>
+            console.log("Answer to Question 3: ");
+            let details = [
+                {
+                    name:"Anish",
+                    age: 30,
+                    country:"Australia",
+                    hobbies:["Music", "Reading", "Tennis"]
+                },
+                {
+                    name:"Shiva",
+                    age: 28,
+                    country: "India",
+                    hobbies:["Netflix", "Dancing", "Carrom"]
+                },
+                {
+                    name:"Preethi",
+                    age: 18,
+                    country: "india",
+                    hobbies:["Dance", "Veena", "Music"]
+                },
+                {
+                    name:"Mathi",
+                    age: 19,
+                    country: "US",
+                    hobbies:["Games", "Violin", "Music"]
+                },
+                {
+                    name: "Rahul",
+                    age: 35,
+                    country: "England",
+                    hobbies: ["Youtube", "Dancing", "Exercise"]
+                }
+            ]
+            function callArray(){
+                console.log(details);
+            }
+            callArray()
+            console.log("Answer to Question 4-1 : Age Less than 30");
+            function lessthan30(){
+                for(let i=0; i<details.length; i++)
+                {
+                    if(details[i].age<30)
+                    {
+                        console.log(details[i]);
+                    }
+                }
+            }
+            lessthan30()
+            console.log("Answer to Question 4-2 : Country : India only");
+            function countryindia(){
+                for(let i=0; i<details.length; i++)
+                {
+                    if(details[i].country == "India" || details[i].country == "india")
+                    {
+                        console.log(details[i]);
+                    }
+                }
+            }
+            countryindia()
+        </script>
+        </body>
+            
+        

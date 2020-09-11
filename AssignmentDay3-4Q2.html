@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Assignment for Day 3-4</title>
+    </head>
+    <body>
+        <H1>Assignment Questions 2 for Day 3-4 </H1>
+        <H2> Question 2</H2>
+        <p><h3>Create a webpage containing two input fields and a button</h3></p>
+        <ol>
+            <li>Write something in the first input</li>
+            <li>On click of the button, the content of input one should be copied in the second input</li>
+        </ol>
+        <H3> Answer : </H3>
+        <H5>What's your name ?</H5>
+        <input type="text" class="name" placeholder="Name"/> <br/> <br/>
+        <button onclick="printvalue()"> Is Your Name is </button> <br/> <br/>
+        <input type ='text' class="name" placeholder='Your Name is'/>
+        <script>
+            function printvalue() 
+            {
+                const eles=document.getElementsByClassName("name");
+                eles[1].value=eles[0].value;
+            }
+        </script>
+        </body>
+            
+        
